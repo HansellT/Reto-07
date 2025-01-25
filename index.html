@@ -9,24 +9,93 @@
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
         section {
             display: flex;
+
         }
+
+        .product{
+            width: 400px;
+            border: 1px solid black;
+            border-radius: 0px 16px 16px 0px;
+            padding: 32px;
+        }
+
+
+        section div span #perfume{
+            font-family: 'Montserrat';
+            font-weight: 500;
+            letter-spacing: 5px;
+        }
+
+        section div h1{
+            font-family: 'Fraunces';
+            font-weight: 700;
+            font-size: 64px;
+        }
+
+        section div p{
+            font-family: 'Motserrat';
+            font-weight: 500;
+            font-size: 24px;
+        }
+        #price{
+            display: flex;
+            width: 100%;
+            align-items: center;
+
+        }
+        #price h2{
+            font-family: 'Fraunces';
+            font-size: 48px;
+            color: green;
+            margin-right: 15px;
+        }
+        #price span{
+            font-family: 'Montserrat';
+            font-size: 20px;
+        }
+
+        button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: green;
+            border-radius: 12px;
+            height: 60px;
+            border: none;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        #cart-shop{
+            width: 24px;
+            margin-right: 16px;
+        }
+
     </style>
 </head>
 <body>
     <section>
         <img src="images/image-product-desktop.jpg" alt="Chanel">
-        <div>
-            <span>PERFUME</span>
+        <div class="product">
+            <span id="perfume">P E R F U M E</span>
             <h1>Gabrielle Essence Eau De Parfum</h1>
             <p>A floral, solar and voluptuous interpretations composed by Oliver Polge, Perfume-Creator for the house of CHANEL.</p>
-            <div>
+            <div id="price">
                 <h2>$ 149.99</h2>
                 <p> $ 169.99</p>
             </div>
             <button>
-                <img src="/images/icon-cart.svg" alt="cart">
+                <img id="cart-shop" src="/images/icon-cart.svg" alt="cart">
                 Add to cart
             </button>
         </div>
